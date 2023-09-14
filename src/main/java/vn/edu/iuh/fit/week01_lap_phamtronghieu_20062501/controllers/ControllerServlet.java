@@ -45,6 +45,14 @@ public class ControllerServlet  extends HttpServlet {
          req.setAttribute("rolename",nameRole);
      }
 
+     private void setContentAdmin(HttpServletRequest req)
+     {
+         ArrayList<Account> accounts= AccRepo.getUsers();
+         ArrayList<Role> roles= RollRepo.getRoles();
+         System.out.println(accounts);
+         req.setAttribute("users",accounts);
+         req.setAttribute("roles",roles);
+     }
     private void CRUD(HttpServletRequest req,HttpServletResponse resp,String action) throws IOException, ServletException {
         HttpSession session=req.getSession(false);
         if(session!=null){
@@ -58,10 +66,31 @@ public class ControllerServlet  extends HttpServlet {
 
             switch (action) {
                 case "Create":
-
                     setHeaderContent(req,acc,roleName);
 
-                    req.getRequestDispatcher("WEB-INF/Dashboard.jsp").forward(req, resp);
+
+                    String username=req.getParameter("username");
+                    String password=req.getParameter("password");
+                    String email= req.getParameter("email");
+                    String phone=req.getParameter("phone");
+//                    int status =Integer.parseInt(req.getParameter("status")) ;
+                    String roleID=req.getParameter("role") ;
+                    System.out.println(roleID);
+                    String uid =req.getParameter("id") ;
+                    Account acc_new = new Account(uid,username,password,email,phone,1);
+
+
+
+                    Boolean result_add_account = AccRepo.addAccount(acc_new);
+                    Boolean result_add_Grant_Access = GrantRepo.addGrantAccess(acc_new,new Role(roleID));
+                   if(result_add_account && result_add_Grant_Access )
+                   {
+                       setHeaderContent(req,acc,roleName);
+                       setContentAdmin(req);
+                       req.getRequestDispatcher("WEB-INF/Dashboard.jsp").forward(req, resp);
+                   }
+                    resp.getWriter().println("them that bai !!!");
+
 
                     break;
                 case  "Delete":
@@ -113,6 +142,7 @@ public class ControllerServlet  extends HttpServlet {
 
 
                          String nameRole= role.getRoleName();
+                         System.out.println(nameRole);
                          //store session
                         HttpSession session=req.getSession();
                         session.setAttribute("userLogin",acc);
@@ -121,15 +151,12 @@ public class ControllerServlet  extends HttpServlet {
 
                         //
                         setHeaderContent(req,acc,nameRole);
+                        setContentAdmin(req);
 
 
-                        req.getRequestDispatcher("WEB-INF/Dashboard.jsp").forward(req, resp);
                          if(nameRole.equalsIgnoreCase("administrator"))
                          {
 
-
-                             ArrayList<Account> accounts= AccRepo.getUsers();
-                             req.setAttribute("users",accounts);
                              req.getRequestDispatcher("WEB-INF/Dashboard.jsp").forward(req, resp);
                          }
                          else {
@@ -152,7 +179,7 @@ public class ControllerServlet  extends HttpServlet {
            {
                CRUD(req,resp,"Delete");
            }
-           else if(action.equalsIgnoreCase("EditUser"))
+           else if(action.equalsIgnoreCase("UpdateUser"))
            {
                CRUD(req,resp,"Update");
            }

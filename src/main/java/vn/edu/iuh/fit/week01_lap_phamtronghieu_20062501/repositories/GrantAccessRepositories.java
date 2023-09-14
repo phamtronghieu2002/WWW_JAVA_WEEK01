@@ -30,10 +30,6 @@ public class GrantAccessRepositories {
             ResultSet rs = stm.executeQuery();
 
             while (rs.next()) {
-             String roleid=rs.getString(1);
-             String accountId=rs.getString(2);
-             boolean is_grant= rs.getBoolean(3);
-             String note="";
 
                role = new Role(rs.getString(1),rs.getString(2),rs.getString(3),rs.getInt(4));
 
@@ -49,6 +45,25 @@ public class GrantAccessRepositories {
 
 
     }
+    public boolean addGrantAccess(Account account,Role role) {
 
+        try {
+            String sql = "insert into grant_access (role_id,account_id,is_grant,note) values (?,?,?,?)";
+            PreparedStatement stm = con.prepareStatement(sql);
+            stm.setString(1,role.getRoleId());
+            stm.setString(2,account.getAccountId());
+            stm.setInt(3,1);
+            stm.setString(4,"");
+            if (stm.executeUpdate() > 0) {
+
+                return true;
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+
+    }
 
 }

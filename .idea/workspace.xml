@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c7ec851-80fe-4cb7-86dd-84228b3c55bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Dashboard.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/abc.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week01_lap_phamtronghieu_20062501/controllers/AdminController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week01_lap_phamtronghieu_20062501/controllers/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week01_lap_phamtronghieu_20062501/controllers/ControllerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week01_lap_phamtronghieu_20062501/controllers/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week01_lap_phamtronghieu_20062501/models/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week01_lap_phamtronghieu_20062501/models/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week01_lap_phamtronghieu_20062501/models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week01_lap_phamtronghieu_20062501/models/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week01_lap_phamtronghieu_20062501/repositories/AccountRepositories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week01_lap_phamtronghieu_20062501/repositories/AccountRepositories.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week01_lap_phamtronghieu_20062501/repositories/GrantAccessRepositories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week01_lap_phamtronghieu_20062501/repositories/GrantAccessRepositories.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week01_lap_phamtronghieu_20062501/repositories/RoleRepositories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/week01_lap_phamtronghieu_20062501/repositories/RoleRepositories.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/abc.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,24 +55,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/gradle-8.2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/gradle-8.2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.13">
     <configuration name="ConnectDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="vn.edu.iuh.fit.week01_lap_phamtronghieu_20062501.db.ConnectDB" />
@@ -218,7 +212,7 @@
       <workItem from="1694607116348" duration="5792000" />
       <workItem from="1694620270056" duration="7332000" />
       <workItem from="1694653772201" duration="11909000" />
-      <workItem from="1694667808336" duration="4055000" />
+      <workItem from="1694667808336" duration="14326000" />
     </task>
     <servers />
   </component>

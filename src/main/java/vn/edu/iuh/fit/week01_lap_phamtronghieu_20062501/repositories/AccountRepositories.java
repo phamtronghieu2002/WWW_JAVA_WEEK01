@@ -65,4 +65,30 @@ public class AccountRepositories {
         }
         return accounts;
     }
+
+
+    public boolean addAccount(Account acc) {
+
+        try {
+            String sql = "insert into account (account_id,full_name,password,email,phone,status) values (?,?,?,?,?,?)";
+            PreparedStatement stm = con.prepareStatement(sql);
+            stm.setString(1,acc.getAccountId());
+            stm.setString(2,acc.getFullName());
+            stm.setString(3,acc.getPassword());
+            stm.setString(4,acc.getEmail());
+            stm.setString(5,acc.getPhone());
+            stm.setInt(6,acc.getStatus());
+
+            if (stm.executeUpdate() > 0) {
+
+                return true;
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+
+    }
+
 }
