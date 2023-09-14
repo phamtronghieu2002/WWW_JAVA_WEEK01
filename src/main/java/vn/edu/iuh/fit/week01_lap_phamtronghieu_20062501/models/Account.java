@@ -11,7 +11,10 @@ public class Account {
     // Constructors
     public Account() {
     }
+    public Account(String accountId) {
+        this.accountId = accountId;
 
+    }
     public Account(String accountId, String fullName, String password) {
         this.accountId = accountId;
         this.fullName = fullName;

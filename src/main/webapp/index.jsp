@@ -7,9 +7,13 @@
 </head>
 <body>
 <style>
-    body
+    *
     {
         box-sizing: border-box;
+    }
+    body
+    {
+
         margin: 0;
         height: 100vh;
         display: flex;
@@ -20,7 +24,9 @@
     {
         width: 500px;
 
-
+        width: 500px;
+        padding: 20px;
+        border: 1px solid rgb(128, 128, 128);
 
     }
 
@@ -37,7 +43,7 @@
               <input name="password"  type="password" class="form-control">
           </div>
 
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button   name="action" value="login" type="submit" class="btn btn-primary">Submit</button>
       </form>
   </div>
 </body>
