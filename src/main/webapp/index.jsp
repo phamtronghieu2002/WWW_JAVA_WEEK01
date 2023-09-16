@@ -32,18 +32,21 @@
 
 </style>
   <div class="wrapper">
+      <h3 class="text-center">Login</h3>
       <form action="ControllerServlet" method="post">
           <div class="mb-3">
               <label  class="form-label">User name</label>
               <input name="username" class="form-control" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+
           </div>
           <div class="mb-3">
               <label  class="form-label">Password</label>
               <input name="password"  type="password" class="form-control">
           </div>
 
+      <div style="display: flex;justify-content: end">
           <button   name="action" value="login" type="submit" class="btn btn-primary">Submit</button>
+      </div>
       </form>
   </div>
 </body>
