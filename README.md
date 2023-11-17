@@ -22,10 +22,14 @@
  1. màn hình đăng nhập
 	![enter image description here](https://github.com/phamtronghieu2002/WWW_JAVA_WEEK01/assets/109363404/17badfd7-4667-495a-830c-e4bbe2d3e822)
 
-   	Thông tin đăng nhập không chính xác
-		![enter image description here](https://github.com/phamtronghieu2002/WWW_JAVA_WEEK01/assets/109363404/c64f7717-47db-4e49-bae7-a5151cb4b8ec)
 
-	 Thông tin đăng nhập là user
-	 	![enter image description here](https://github.com/phamtronghieu2002/WWW_JAVA_WEEK01/assets/109363404/eef51381-ea11-4227-963f-a7abf44fb20a)
+    Thông tin đăng nhập không chính xác
+		
+  ![enter image description here](https://github.com/phamtronghieu2002/WWW_JAVA_WEEK01/assets/109363404/c64f7717-47db-4e49-bae7-a5151cb4b8ec)
+
+	 
+  Thông tin đăng nhập là user
+	 
+  ![enter image description here](https://github.com/phamtronghieu2002/WWW_JAVA_WEEK01/assets/109363404/eef51381-ea11-4227-963f-a7abf44fb20a)
    Thông tin đăng nhập là Admin
   ![image](https://github.com/phamtronghieu2002/WWW_JAVA_WEEK01/assets/109363404/41860112-edd3-4b2d-bf41-1b4e438910eb)
